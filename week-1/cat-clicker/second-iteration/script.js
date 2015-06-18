@@ -27,7 +27,7 @@ var app = app || {};
     // counter div setup
     var counter = document.createElement('div');
     counter.setAttribute('class', 'counter');
-    counter.setAttribute('id', 'counter'+this.name);
+    counter.setAttribute('id', this.name+' counter');
     counter.innerHTML = this.count;
     container.appendChild(counter);
 
@@ -44,7 +44,7 @@ var app = app || {};
   
   // counter
   app.CatClicker.prototype.increment = function() {
-    var el = document.getElementById('counter'+this.name);
+    var el = document.getElementById(this.name+' counter');
     el.innerHTML = ++this.count;
   };
 
