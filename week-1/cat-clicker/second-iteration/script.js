@@ -6,7 +6,7 @@ var app = app || {};
   // base
   app.catClicker = function(name, image) {
     this.count = 0;
-    this.name = name;
+    this.name = name || 'Cat Name';
     this.image = image || 'http://themify.me/demo/themes/wp-content/uploads/image-placeholder.jpg';
   };
 
