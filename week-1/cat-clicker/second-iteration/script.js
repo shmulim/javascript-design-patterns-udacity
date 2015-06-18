@@ -4,13 +4,13 @@ var app = app || {};
   'use strict';
   
   // base
-  app.catClicker = function(name, image) {
+  app.CatClicker = function(name, image) {
     this.count = 0;
     this.name = name || 'Cat Name';
     this.image = image || 'http://themify.me/demo/themes/wp-content/uploads/image-placeholder.jpg';
   };
 
-  app.catClicker.prototype.init = function() {
+  app.CatClicker.prototype.init = function() {
     var self = this;
 
     // wrapper
@@ -43,16 +43,16 @@ var app = app || {};
   };
   
   // counter
-  app.catClicker.prototype.increment = function() {
+  app.CatClicker.prototype.increment = function() {
     var el = document.getElementById('counter'+this.name);
     el.innerHTML = ++this.count;
   };
 
   // create cats
   window.onload = function() {
-    var cat1 = new app.catClicker('Ketzel the 1st', 'http://s.hswstatic.com/gif/whiskers-sam.jpg').init();
-    var cat2 = new app.catClicker('Ketzel the 2nd').init();
-    var cat3 = new app.catClicker('Ketzel the 3rd').init();
+    var cat1 = new app.CatClicker('Ketzel the 1st', 'http://s.hswstatic.com/gif/whiskers-sam.jpg').init();
+    var cat2 = new app.CatClicker('Ketzel the 2nd').init();
+    var cat3 = new app.CatClicker('Ketzel the 3rd').init();
   };
 
 })();
