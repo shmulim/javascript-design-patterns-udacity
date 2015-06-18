@@ -48,7 +48,7 @@ var app = app || {};
     el.innerHTML = ++this.count;
   };
 
-  // cats
+  // create cats
   window.onload = function() {
     var cat1 = new app.catClicker('Ketzel the 1st', 'http://s.hswstatic.com/gif/whiskers-sam.jpg').init();
     var cat2 = new app.catClicker('Ketzel the 2nd').init();
